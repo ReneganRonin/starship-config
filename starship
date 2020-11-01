@@ -34,7 +34,7 @@ truncation_length = 1
 format = "in [$path]($style)[$lock_symbol]($lock_style) "
 
 [git_branch]
-format = " [$symbol$branch]($style) "
+format = "[$symbol$branch]($style) "
 symbol = "🍣 "
 style = "bold yellow"
 
@@ -53,9 +53,9 @@ diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}"
 untracked = "🛤️  ×${count}"
 stashed = "📦 "
 modified = "📝 ×${count}"
-staged = "🗃️  ×${count}"
+staged = "🗃️ ×${count}"
 renamed = "📛 ×${count}"
-deleted = "🗑️  ×${count}"
+deleted = "🗑️ ×${count}"
 style = "bright-white"
 format = "$all_status$ahead_behind"
 
