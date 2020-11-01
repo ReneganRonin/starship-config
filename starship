@@ -1,3 +1,4 @@
+
 # ~/.starship/starship
 
 [battery]
@@ -79,12 +80,17 @@ threshold = 50
 style = "bold dimmed white"
 disabled = false
 
+[nodejs]
+symbol = " "
+format = "[$symbol$version](bold green) "
+
 [package]
 disabled = false
 
 [python]
+symbol = " "
 format = "[$symbol$version]($style) "
-style = "bold green"
+style = "bold yellow"
 pyenv_version_name = true
 
 [time]
