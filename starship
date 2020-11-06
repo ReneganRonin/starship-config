@@ -5,7 +5,7 @@
 full_symbol = "🔋"
 charging_symbol = "🔌"
 discharging_symbol = "⚡"
-disabled=false
+disabled=true
 
 [[battery.display]]
 threshold = 30
@@ -90,10 +90,15 @@ format = "[$symbol$version](bold green) "
 disabled = false
 
 [python]
-symbol = " "
-format = "[$symbol$version]($style) "
+symbol = " "
 style = "bold yellow"
+format = "[$symbol$version]($style) "
 pyenv_version_name = true
+
+[rust]
+symbol = "⚙️ " 
+style = "bold #fca103"
+format = "[$symbol$version]($style) "
 
 [time]
 time_format = "%T"
