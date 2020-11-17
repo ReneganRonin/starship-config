@@ -2,8 +2,8 @@
 # ~/.starship/starship
 add_newline = false
 
-format="""$python$conda$rust$node$elm$lua$java$golang$erlang$package$git_branch$git_commit$git_status$hg_branch$docker_context$cmake$jobs
-$username$hostname$time$directory$character
+format="""$python$conda$rust$node$elm$lua$java$golang$erlang$package$directory$git_branch$git_commit$git_state$git_status$hg_branch$docker_context$cmake$jobs
+$username$hostname$time$character
 
 """
 
@@ -45,7 +45,7 @@ truncation_length = 1
 format = "in [$path]($style)[$lock_symbol]($lock_style) "
 
 [git_branch]
-format = "[$symbol$branch]($style) "
+format = " [$symbol$branch]($style) "
 symbol = "🍣 "
 style = "bold yellow"
 
