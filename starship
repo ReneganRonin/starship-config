@@ -2,6 +2,11 @@
 # ~/.starship/starship
 add_newline = false
 
+format="""$python$conda$rust$node$elm$lua$java$golang$erlang$package$git_branch$git_commit$git_status$hg_branch$docker_context$cmake$jobs
+$username$hostname$time$directory$character
+
+"""
+
 [battery]
 full_symbol = "🔋"
 charging_symbol = "🔌"
