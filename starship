@@ -2,8 +2,7 @@
 # ~/.starship/starship
 add_newline = false
 
-format="""$python$conda$rust$node$elm$lua$java$golang$erlang$package$directory$git_branch$git_commit$git_state$git_status$hg_branch$docker_context$cmake$jobs
-$username$hostname$time
+format="""$username$hostname$directory $python$conda$rust$node$elm$lua$java$golang$erlang$package$git_branch$git_commit$git_state$git_status$hg_branch$docker_context$cmake$jobs$time
 $character
 """
 
@@ -30,9 +29,9 @@ threshold = 100
 style = "bold green"
 
 [character]
-success_symbol = "[](bold #15ff00)"
-error_symbol = "[](bold #ff2a00)"
-vicmd_symbol = "[](bold #9dff00)"
+success_symbol = "[](bold #15ff00)"  # nf-fa-angle_double_right
+error_symbol = "[](bold #ff2a00)"  # nf-fa-ban
+vicmd_symbol = "[](bold #9dff00)"  # nf-fa-angle_double_left
 
 [cmd_duration]
 style = "bold #c982ff"
@@ -116,6 +115,6 @@ style = "bright-white"
 disabled = false
 
 [username]
-style_user = "bold dimmed #51afef"
+style_user = "bold #4fb0ff"
 format = "[$user]($style)  "
 show_always = true 
