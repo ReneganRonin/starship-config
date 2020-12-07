@@ -3,9 +3,8 @@
 add_newline = true
 
 format="""
-[ ](bold #15ff00)
-[┌─ ](bold #15ff00)$username$hostname$directory $python$conda$rust$node$elm$lua$java$golang$erlang$package$git_branch$git_commit$git_state$git_status$hg_branch$docker_context$cmake$jobs$time
-[└──────](bold #15ff00)$character
+[┌─── ](bold #15ff00)[─── ](bold #4fb0ff)$username$hostname$directory $python$conda$rust$node$elm$lua$java$golang$erlang$package$git_branch$git_commit$git_state$git_status$hg_branch$docker_context$cmake$jobs$time
+[└](bold #15ff00)$character
 """
 
 [battery]
@@ -118,5 +117,5 @@ disabled = false
 
 [username]
 style_user = "bold #4fb0ff"
-format = "[$user]($style)  "
+format = "[$user]($style) of "
 show_always = true 
