@@ -2,9 +2,7 @@
 # ~/.starship/starship
 add_newline = true
 
-format="""
-[┌─── ](bold #15ff00)[─── ](bold #4fb0ff)$username$hostname$directory $python$conda$rust$node$elm$lua$java$golang$erlang$package$git_branch$git_commit$git_state$git_status$hg_branch$docker_context$cmake$jobs$time
-[└](bold #15ff00)$character
+format="""$username$hostname$directory$python$conda$rust$node$elm$lua$java$golang$erlang$package$git_branch$git_commit$git_state$git_status$hg_branch$docker_context$cmake$jobs$time$character
 """
 
 [battery]
@@ -28,11 +26,6 @@ style = "bold yellow"
 [[battery.display]]
 threshold = 100
 style = "bold green"
-
-[character]
-success_symbol = "[](bold #15ff00)"  # nf-fa-angle_double_right
-error_symbol = "[](bold #ff2a00)"  # nf-fa-ban
-vicmd_symbol = "[](bold #ffaa00)"  # nf-fa-angle_double_left
 
 [cmd_duration]
 style = "bold #c982ff"
